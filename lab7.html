@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grade Tracker</h1>
+    <form id="gradeForm">
+        <input type="number" id="mathGrade" placeholder="Math Grade" required>
+        <input type="number" id="englishGrade" placeholder="English Grade" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Math Grade</th>
+                <th>English Grade</th>
+                <th>Average</th>
+            </tr>
+        </thead>
+        <tbody id="gradesTableBody"></tbody>
+        <tfoot>
+            <tr>
+                <td id="mathAverage"></td>
+                <td id="englishAverage"></td>
+                <td id="overallAverage"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="lab7.js"></script>
+</body>
+</html>
